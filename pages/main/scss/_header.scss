@@ -1,0 +1,85 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__logo
+
+  &__logo {
+    width: 186px;
+    height: 60px;
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+
+    p {
+      margin: 13px 0 0 3px;
+      font-family: "Arial";
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      color: #ffffff;
+    }
+  }
+
+  // .header__list
+
+  &__list {
+    display: flex;
+    gap: 36px;
+  }
+
+  // .header__link
+
+  &__link {
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #cdcdcd;
+    position: relative;
+  }
+  &__link:hover {
+    color: #fafafa;
+  }
+}
+.activ {
+  color: #fafafa;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.activ:hover {
+  color: #fafafa;
+  cursor: default;
+}
+
+// &__link:after {
+//   content: "";
+//   height: 3px;
+//   position: absolute;
+//   background-color: var(--accent-color);
+//   bottom: -3px;
+//   left: 0;
+//   width: 0;
+//   z-index: 1;
+//   transition: width 0.5s;
+// }
+
+// &__link:hover::after {
+//   width: 100%;
+// }
+// .activ:hover::after {
+//   width: 0;
+// }

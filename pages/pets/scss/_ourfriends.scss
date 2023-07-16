@@ -1,0 +1,181 @@
+.ourfriends {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: var(--bg-color);
+  // .ourfriends__container
+
+  &__container {
+    text-align: center;
+  }
+
+  // .ourfriends__title
+
+  &__title {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  // .ourfriends__row
+
+  &__row {
+    margin: 0 auto;
+  }
+
+  // .ourfriends__items
+
+  &__items {
+    display: flex;
+    column-gap: 15px;
+    row-gap: 30px;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 59px;
+  }
+
+  // .ourfriends__item
+
+  &__item {
+    max-width: 270px;
+    background: #fafafa;
+    border-radius: 9px;
+    text-align: center;
+    overflow: hidden;
+
+    :not(:last-child) {
+      margin-bottom: 30px;
+    }
+    padding-bottom: 30px;
+    transition: 0.6s;
+    img {
+      transition: 0.6s;
+    }
+  }
+  &__item:hover {
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  }
+  &__item:hover img {
+    transform: scale(1.2);
+  }
+  &__item:hover .item-ourfriends__title {
+    transform: scale(1.2);
+  }
+  &__item:hover .item-ourfriends__btn {
+    border: 2px solid #fddcc4;
+    background-color: #fddcc4;
+  }
+
+  &__arrow {
+    position: absolute;
+    height: 52px;
+    width: 52px;
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: "";
+    cursor: pointer;
+    img {
+      display: block;
+      position: absolute;
+    }
+  }
+  // .ourfriends__btn
+  &__btn {
+    min-width: 20px;
+    margin: 0 auto;
+  }
+}
+.arrow-to-left {
+  left: -105px;
+  img {
+    left: 37.1%;
+    right: 37.1%;
+    top: 43.55%;
+    bottom: 43.55%;
+  }
+}
+.arrow-to-right {
+  right: -105px;
+  img {
+    left: 37.1%;
+    right: 37.1%;
+    top: 43.55%;
+    bottom: 43.55%;
+    transform: rotate(180deg);
+  }
+}
+
+.item-ourfriends {
+  // .item-ourfriends__title
+
+  &__title {
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 20px;
+    // line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+    transition: 0.6s;
+  }
+  &__btn {
+    transition: 0.6s;
+  }
+}
+
+.ourfriends {
+  // .ourfriends__buttons
+
+  &__buttons {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .ourfriends__
+
+  &__button {
+    width: 52px;
+    height: 52px;
+    border: 2px solid var(--accent-color);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+  }
+}
+.to-center {
+  background: var(--accent-color);
+}
+.to-center:hover {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+.to-total-left,
+.to-left {
+  border: 2px solid #cdcdcd;
+  transform: rotate(180deg);
+  svg path {
+    fill: #cdcdcd;
+  }
+}
+.to-total-left:hover,
+.to-left:hover {
+  cursor: default;
+}
+
+.to-rigth,
+.to-total-rigth {
+  border: 2px solid var(--accent-color);
+  transition: 0.6s;
+}
+.to-rigth:hover,
+.to-total-rigth:hover {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
+}

@@ -1,0 +1,47 @@
+.about {
+  // .about__container
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  // .about__image
+
+  &__image {
+    max-width: 300px;
+    margin: 0 120px 0 auto;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  // .about__content
+
+  &__content {
+    flex: 0 0 50%;
+  }
+
+  // .about__title
+
+  &__title {
+    margin: 16px 0 25px 0;
+    max-width: 350px;
+  }
+
+  // .about__text
+
+  &__text {
+    max-width: 430px;
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4c4c4c;
+    &:not(:last-child) {
+      margin: 0 0 25px 0;
+    }
+  }
+}

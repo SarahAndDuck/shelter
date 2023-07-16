@@ -1,0 +1,89 @@
+.inaddition {
+  background-color: var(--bg-color);
+  // .inaddition__container
+
+  &__container {
+    max-width: 990px;
+    column-gap: 29px;
+    display: flex;
+  }
+
+  // .inaddition__image
+
+  &__image {
+    max-width: 505px;
+    margin: 11px auto 0;
+    picture {
+      width: 100%;
+    }
+  }
+
+  // .inaddition__content
+  &__content {
+    max-width: 380px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    // gap: 20px;
+  }
+
+  // .inaddition__title
+
+  &__title {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  // .inaddition__text
+
+  &__text {
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+  }
+  // .inaddition__description
+  &__description {
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #b2b2b2;
+  }
+
+  // .inaddition__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 15px;
+    width: 349px;
+    height: 44px;
+    background-color: var(--accent-color);
+    border-radius: 9px;
+    margin-bottom: 20px;
+    transition: 0.6s;
+    justify-self: center;
+  }
+  &__link:hover {
+    background-color: #e7aa7f;
+  }
+  // .inaddition__card-number
+
+  &__card-number {
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+  }
+  &__icon {
+    vertical-align: top;
+  }
+}

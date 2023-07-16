@@ -1,0 +1,50 @@
+.help {
+  // .help__container
+
+  &__container {
+  }
+
+  // .help__title
+
+  &__title {
+    max-width: 310px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+
+  // .help__list
+
+  &__list {
+    // max-width: 1026px;
+    // margin: 0 auto;
+    display: flex;
+    gap: 58px 120px;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  // .help__item
+
+  &__item {
+    text-align: center;
+  }
+
+  // .help__icon
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+    column-gap: 0;
+  }
+
+  // .help__text
+
+  &__text {
+    font-family: "Georgia";
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+  }
+}
